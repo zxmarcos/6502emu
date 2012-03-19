@@ -9,18 +9,19 @@
 #include <cstring>
 #include <ctype.h>
 #include "cpu.h"
-#include "memory.h"
+
 
 
 namespace bus
 {
 INLINE unsigned char Read(int a)
 {
-	return bus_read(a);
+//	return bus_read(a);
+	return 0;
 }
 INLINE void Write(unsigned a, unsigned char data)
 {
-	bus_write(a, data);
+//	bus_write(a, data);
 }
 }
 
